@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Practice Grid</title>
+    <style>
+        .container{
+            background-color: antiquewhite;
+            color: black;
+            border: 3px solid gray;
+            display: grid;
+            grid-template-rows:auto auto auto;
+            grid-template-columns:  auto auto auto;
+            height: 20rem;
+            
+
+        }
+        .item{
+            border: 1px yellowgreen solid;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .item3{
+            grid-row: span 2;
+        }
+        .item9{
+           display:none;
+        }
+        .item8{
+            grid-row:span 2;
+        }
+    </style>
+</head>
+<body>
+    <h1 style="text-align:center"> Grid </h1>
+    <div class="container">
+        <div class="item item1">1 </div>
+        <div class="item item2">2</div>
+        <div class="item item3">3</div>
+        <div class="item item4">4</div>
+        <div class="item item5">5</div>
+        <div class="item item6">6</div>
+        <div class="item item7">7</div>
+        <div class="item item8">8</div>
+        <div class="item item9">9</div>
+    </div>
+</body>
+</html>
